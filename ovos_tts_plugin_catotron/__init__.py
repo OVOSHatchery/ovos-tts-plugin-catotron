@@ -10,7 +10,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-from mycroft.tts import TTS, TTSValidator
+from ovos_plugin_manager.templates.tts import TTS, TTSValidator
 import requests
 from pydub import AudioSegment
 from os.path import join, isfile, isdir
@@ -36,6 +36,8 @@ class CatotronTTSPlugin(TTS):
         # punctuation and merged again, this value defines the silence
         # between merging sound files
         self.pause_between_chunks = config.get("pause_between_chunks", 0.6)
+
+        # TODO move to mimic2 scheme of pre-loaded cache
         # cache is used to speed up repeated synths and save api calls
         self.cache = config.get("cache_dir") or join(gettempdir(), "catotron")
         self.cache_enabled = config.get("cache_enabled", True)

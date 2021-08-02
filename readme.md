@@ -1,19 +1,15 @@
 ## Description
 Mycroft TTS plugin for [Catotron](http://catotron.collectivat.cat/)
 
-The "plugins" are pip install-able modules presenting one or more entrypoints with a entrypoint group defined in setup.py
-
-more info in the [original PR](https://github.com/MycroftAI/mycroft-core/pull/2594)
-
 ## Install
 
-`mycroft-pip install jarbas-tts-plugin-catotron`
+`pip install ovos-tts-plugin-catotron`
 
 ## Configuration
 
 ```json
   "tts": {
-    "module": "catotron_tts_plug"
+    "module": "ovos-tts-plugin-catotron"
   }
  
 ```
@@ -31,8 +27,8 @@ Default values are
 
 ```json
   "tts": {
-    "module": "catotron_tts_plug",
-    "catotron_tts_plug": {
+    "module": "ovos-tts-plugin-catotron",
+    "ovos-tts-plugin-catotron": {
       "url": "http://catotron.collectivat.cat/synthesize",
       "pause_between_chunks": 0.6,
       "cache_dir": "/tmp/catotron",
