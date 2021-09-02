@@ -5,14 +5,14 @@ PLUGIN_ENTRY_POINT = 'ovos-tts-plugin-catotron = ' \
                      'ovos_tts_plugin_catotron:CatotronTTSPlugin'
 setup(
     name='ovos-tts-plugin-catotron',
-    version='0.1',
+    version='0.1.1',
     description='A catalan tacotron based tts plugin for mycroft',
     url='https://github.com/OpenVoiceOS/ovos-tts-plugin-catotron',
     author='JarbasAi',
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
     packages=['ovos_tts_plugin_catotron'],
-    install_requires=["ovos-plugin-manager>=0.0.1a7", "requests", "pydub"],
+    install_requires=["ovos-plugin-manager>=0.0.1a12", "requests", "pydub"],
     zip_safe=True,
     classifiers=[
         'Development Status :: 3 - Alpha',
